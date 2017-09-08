@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DCAAEBCC1F50277B007EC28E"
+               BlueprintIdentifier = "DC45F2581F6275ED0072B30B"
                BuildableName = "Web Service.app"
                BlueprintName = "Web Service"
                ReferencedContainer = "container:Web Service.xcodeproj">
@@ -32,7 +32,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DCAAEBCC1F50277B007EC28E"
+            BlueprintIdentifier = "DC45F2581F6275ED0072B30B"
             BuildableName = "Web Service.app"
             BlueprintName = "Web Service"
             ReferencedContainer = "container:Web Service.xcodeproj">
@@ -55,7 +55,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DCAAEBCC1F50277B007EC28E"
+            BlueprintIdentifier = "DC45F2581F6275ED0072B30B"
             BuildableName = "Web Service.app"
             BlueprintName = "Web Service"
             ReferencedContainer = "container:Web Service.xcodeproj">
@@ -74,7 +74,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DCAAEBCC1F50277B007EC28E"
+            BlueprintIdentifier = "DC45F2581F6275ED0072B30B"
             BuildableName = "Web Service.app"
             BlueprintName = "Web Service"
             ReferencedContainer = "container:Web Service.xcodeproj">

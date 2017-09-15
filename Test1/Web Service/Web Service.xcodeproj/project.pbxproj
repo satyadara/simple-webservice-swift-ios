@@ -12,6 +12,7 @@
 		DC45F2621F6275ED0072B30B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC45F2601F6275ED0072B30B /* Main.storyboard */; };
 		DC45F2641F6275ED0072B30B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC45F2631F6275ED0072B30B /* Assets.xcassets */; };
 		DC45F2671F6275ED0072B30B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC45F2651F6275ED0072B30B /* LaunchScreen.storyboard */; };
+		DCD349661F6B8FF4000050C3 /* Mahasiswa.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD349651F6B8FF4000050C3 /* Mahasiswa.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		DC45F2631F6275ED0072B30B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC45F2661F6275ED0072B30B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC45F2681F6275ED0072B30B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCD349651F6B8FF4000050C3 /* Mahasiswa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mahasiswa.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				DC45F25C1F6275ED0072B30B /* AppDelegate.swift */,
 				DC45F25E1F6275ED0072B30B /* ViewController.swift */,
+				DCD349651F6B8FF4000050C3 /* Mahasiswa.swift */,
 				DC45F2601F6275ED0072B30B /* Main.storyboard */,
 				DC45F2631F6275ED0072B30B /* Assets.xcassets */,
 				DC45F2651F6275ED0072B30B /* LaunchScreen.storyboard */,
@@ -136,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCD349661F6B8FF4000050C3 /* Mahasiswa.swift in Sources */,
 				DC45F25F1F6275ED0072B30B /* ViewController.swift in Sources */,
 				DC45F25D1F6275ED0072B30B /* AppDelegate.swift in Sources */,
 			);
@@ -299,6 +303,7 @@
 				DC45F26D1F6275ED0072B30B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

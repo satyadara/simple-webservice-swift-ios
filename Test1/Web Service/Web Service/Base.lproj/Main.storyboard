@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Web_Service" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,8 +21,62 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6dF-Vq-eg0">
+                                <rect key="frame" x="16" y="20" width="343" height="112"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="npm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tuI-ef-JSj">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nama" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mtO-fv-OEA">
+                                        <rect key="frame" x="0.0" y="30.5" width="343" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="jurusan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P0E-Yc-b0J">
+                                        <rect key="frame" x="0.0" y="61" width="343" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="fakultas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PSl-Bv-AQu">
+                                        <rect key="frame" x="0.0" y="91.5" width="343" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="mtO-fv-OEA" secondAttribute="trailing" id="8y2-fs-mz7"/>
+                                    <constraint firstItem="tuI-ef-JSj" firstAttribute="leading" secondItem="6dF-Vq-eg0" secondAttribute="leading" id="ACw-j7-RXf"/>
+                                    <constraint firstItem="P0E-Yc-b0J" firstAttribute="leading" secondItem="6dF-Vq-eg0" secondAttribute="leading" id="O7Q-SN-cHw"/>
+                                    <constraint firstItem="PSl-Bv-AQu" firstAttribute="leading" secondItem="6dF-Vq-eg0" secondAttribute="leading" id="YiF-9X-rgB"/>
+                                    <constraint firstAttribute="trailing" secondItem="tuI-ef-JSj" secondAttribute="trailing" id="clI-Rh-6SF"/>
+                                    <constraint firstAttribute="trailing" secondItem="P0E-Yc-b0J" secondAttribute="trailing" id="f36-vZ-svh"/>
+                                    <constraint firstItem="mtO-fv-OEA" firstAttribute="leading" secondItem="6dF-Vq-eg0" secondAttribute="leading" id="gMC-8i-NSZ"/>
+                                    <constraint firstItem="tuI-ef-JSj" firstAttribute="top" secondItem="6dF-Vq-eg0" secondAttribute="top" id="ri8-fw-d9L"/>
+                                    <constraint firstAttribute="trailing" secondItem="PSl-Bv-AQu" secondAttribute="trailing" id="vXB-9Q-Bsy"/>
+                                    <constraint firstItem="PSl-Bv-AQu" firstAttribute="top" secondItem="P0E-Yc-b0J" secondAttribute="bottom" constant="10" id="zqS-JN-kQL"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6dF-Vq-eg0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="PhE-QT-wGJ"/>
+                            <constraint firstItem="6dF-Vq-eg0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="WqE-P0-c5c"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6dF-Vq-eg0" secondAttribute="trailing" id="nTG-zf-nBx"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="fakultas" destination="PSl-Bv-AQu" id="jEK-XP-485"/>
+                        <outlet property="jurusan" destination="P0E-Yc-b0J" id="ZLl-R4-wnf"/>
+                        <outlet property="nama" destination="mtO-fv-OEA" id="Zuk-oJ-Wab"/>
+                        <outlet property="npm" destination="tuI-ef-JSj" id="BwQ-qp-qEz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

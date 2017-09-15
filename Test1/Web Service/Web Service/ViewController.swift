@@ -9,47 +9,77 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    let JSON_URL:String = "https://satyadara.com/api/mahasiswa"
+    var mhs_list = [Mahasiswa]()
+    
+    @IBOutlet weak var npm: UILabel!
+    @IBOutlet weak var nama: UILabel!
+    @IBOutlet weak var jurusan: UILabel!
+    @IBOutlet weak var fakultas: UILabel!
+    
+    var strNpm = String()
+    var strNama = String()
+    var strJurusan = String()
+    var strFakultas = String()
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        JsonParser(urlString: JSON_URL)
         
-        let urlString = URL(string: "https://api.adorable.io/avatars/list")
+    }
+    
+    fileprivate func JsonParser(urlString: String)    {
         
-        if let url = urlString {
-            let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
-                if error != nil {
-                    print("Error")
-                } else {
-                    if let usableData = data {
-                        do  {
-                            let myjson = try JSONSerialization.jsonObject(with: usableData, options: JSONSerialization.ReadingOptions.mutableContainers) as AnyObject
-                            //print(myjson)
+        let url = URL(string: urlString)
+        
+        let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
+            if error != nil {
+                print("Error ", error ?? "" )
+            } else {
+                if let usableData = data {
+                    do  {
+                        let myJson = try JSONSerialization.jsonObject(with: usableData, options: JSONSerialization.ReadingOptions.mutableContainers) as AnyObject
+                    
+                        if let mhs = myJson["mahasiswa"] as! [AnyObject]? {
+                            for m in mhs    {
+                                let data = Mahasiswa(json: m as! [String : Any])
+                                
+                                self.mhs_list.append(data)
+                            }
                             
-                            // PENGAMBILAN SUB
-                            if let face = myjson["face"] as AnyObject?  {
-                                if let mouth = face["mouth"] as! NSArray?    {
-                                    let mo = mouth as? [String]
-                                    var mm = [String]()
-                                    for m in mo!     {
-                                        mm.append(m)
-                                    }
-                                    
-                                    for m in mm {
-                                        print(m)
-                                    }
-                                }
+                            for m in self.mhs_list   {
+                                print(m.npm, " ", m.nama, " ", m.jurusan, " ", m.fakultas)
                             }
                         }
-                        catch   {
-                            
-                        }
+                        //print(myjson)
+                        
+                        // PENGAMBILAN SUB
+//                        if let face = myjson["face"] as AnyObject?  {
+//                            if let mouth = face["mouth"] as! NSArray?    {
+//                                let mo = mouth as? [String]
+//                                var mm = [String]()
+//                                for m in mo!     {
+//                                    mm.append(m)
+//                                }
+//                                
+//                                for m in mm {
+//                                    print(m)
+//                                }
+//                            }
+//                        }
+                        
+                    }
+                    catch   {
+                        
                     }
                 }
             }
-            task.resume()
         }
+        task.resume()
+        
+        
     }
-
+    
 }
 

@@ -24,16 +24,22 @@ class ViewController: UIViewController {
                     if let usableData = data {
                         do  {
                             let myjson = try JSONSerialization.jsonObject(with: usableData, options: JSONSerialization.ReadingOptions.mutableContainers) as AnyObject
-                            print(myjson)
-                            /* PENGAMBILAN SUB
+                            //print(myjson)
+                            
+                            // PENGAMBILAN SUB
                             if let face = myjson["face"] as AnyObject?  {
-                                
                                 if let mouth = face["mouth"] as! NSArray?    {
-                                    for i in 0..<3  {
-                                        print(mouth[i])
+                                    let mo = mouth as? [String]
+                                    var mm = [String]()
+                                    for m in mo!     {
+                                        mm.append(m)
+                                    }
+                                    
+                                    for m in mm {
+                                        print(m)
                                     }
                                 }
-                            } */
+                            }
                         }
                         catch   {
                             

@@ -8,25 +8,31 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     let JSON_URL:String = "https://satyadara.com/api/mahasiswa"
     var mhs_list = [Mahasiswa]()
-    
-    @IBOutlet weak var npm: UILabel!
-    @IBOutlet weak var nama: UILabel!
-    @IBOutlet weak var jurusan: UILabel!
-    @IBOutlet weak var fakultas: UILabel!
     
     var strNpm = String()
     var strNama = String()
     var strJurusan = String()
     var strFakultas = String()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        JsonParser(urlString: JSON_URL)
         
+        JsonParser(urlString: JSON_URL)
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return mhs_list.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
+        cell.textLabel?.text = mhs_list[indexPath.row].nama
+        
+        return cell
     }
     
     fileprivate func JsonParser(urlString: String)    {
@@ -40,38 +46,23 @@ class ViewController: UIViewController {
                 if let usableData = data {
                     do  {
                         let myJson = try JSONSerialization.jsonObject(with: usableData, options: JSONSerialization.ReadingOptions.mutableContainers) as AnyObject
-                    
+                        
                         if let mhs = myJson["mahasiswa"] as! [AnyObject]? {
+                            //from json to Data Object
                             for m in mhs    {
                                 let data = Mahasiswa(json: m as! [String : Any])
                                 
                                 self.mhs_list.append(data)
                             }
                             
+                            //print Data Object
                             for m in self.mhs_list   {
                                 print(m.npm, " ", m.nama, " ", m.jurusan, " ", m.fakultas)
                             }
                         }
-                        //print(myjson)
-                        
-                        // PENGAMBILAN SUB
-//                        if let face = myjson["face"] as AnyObject?  {
-//                            if let mouth = face["mouth"] as! NSArray?    {
-//                                let mo = mouth as? [String]
-//                                var mm = [String]()
-//                                for m in mo!     {
-//                                    mm.append(m)
-//                                }
-//                                
-//                                for m in mm {
-//                                    print(m)
-//                                }
-//                            }
-//                        }
-                        
                     }
                     catch   {
-                        
+                        print("catch error")
                     }
                 }
             }

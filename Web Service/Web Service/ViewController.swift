@@ -12,6 +12,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     let JSON_URL:String = "https://satyadara.com/api/mahasiswa"
     var mhs_list = [Mahasiswa]()
+    @IBOutlet weak var cellLabel: UILabel!
     
     var strNpm = String()
     var strNama = String()
@@ -29,8 +30,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
-        cell.textLabel?.text = mhs_list[indexPath.row].nama
+        let cell = UITableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: "cell")
+        cell.textLabel?.text = mhs_list[indexPath.row].npm
         
         return cell
     }

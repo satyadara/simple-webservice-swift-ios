@@ -20,6 +20,9 @@ class ViewController: UIViewController {
     @IBAction func GET(_ sender: Any) {
         performSegue(withIdentifier: "getMahasiswaList", sender: (Any).self)
     }
+    @IBAction func GETONE(_ sender: Any) {
+        performSegue(withIdentifier: "getMahasiswa", sender: (Any).self)
+    }
     
 }
 

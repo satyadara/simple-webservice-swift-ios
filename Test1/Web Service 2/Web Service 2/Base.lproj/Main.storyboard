@@ -41,7 +41,7 @@
         <!--Mahasiswa-->
         <scene sceneID="w7P-OP-jyf">
             <objects>
-                <viewController title="Mahasiswa" id="Oib-PM-XnE" sceneMemberID="viewController">
+                <viewController title="Mahasiswa" id="Oib-PM-XnE" customClass="GetOneViewController" customModule="Web_Service_2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sCf-8B-HqF"/>
                         <viewControllerLayoutGuide type="bottom" id="Ms9-19-FQG"/>
@@ -49,8 +49,50 @@
                     <view key="view" contentMode="scaleToFill" id="20u-Ln-nya">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="tf5-qO-IL3">
+                                <rect key="frame" x="16" y="74" width="288" height="142"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AW1-6A-0i6">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4fQ-jb-AaL">
+                                        <rect key="frame" x="0.0" y="40.5" width="288" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nXL-Jr-VfB">
+                                        <rect key="frame" x="0.0" y="81" width="288" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3AC-MJ-lp9">
+                                        <rect key="frame" x="0.0" y="121.5" width="288" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="tf5-qO-IL3" secondAttribute="trailing" id="AYT-on-eYX"/>
+                            <constraint firstItem="tf5-qO-IL3" firstAttribute="leading" secondItem="20u-Ln-nya" secondAttribute="leadingMargin" id="QWa-YW-IXs"/>
+                            <constraint firstItem="tf5-qO-IL3" firstAttribute="top" secondItem="sCf-8B-HqF" secondAttribute="bottom" constant="10" id="qJx-Hg-p3N"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="fakultasLabel" destination="3AC-MJ-lp9" id="42c-wL-9mr"/>
+                        <outlet property="jurusanLabel" destination="nXL-Jr-VfB" id="wC1-yi-k6i"/>
+                        <outlet property="namaLabel" destination="4fQ-jb-AaL" id="idD-gs-2lt"/>
+                        <outlet property="npmLabel" destination="AW1-6A-0i6" id="zcg-5O-E9M"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I9R-ir-hgh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -81,6 +123,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BNS-w6-Ucr">
                                         <rect key="frame" x="0.0" y="50" width="288" height="30"/>
                                         <state key="normal" title="GET Mahasiswa"/>
+                                        <connections>
+                                            <action selector="GETONE:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ROy-6Y-tsV"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>

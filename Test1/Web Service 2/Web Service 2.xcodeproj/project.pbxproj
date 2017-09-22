@@ -14,6 +14,7 @@
 		DCACD8261F74CF4A00C7E173 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCACD8241F74CF4A00C7E173 /* LaunchScreen.storyboard */; };
 		DCACD82E1F74D91100C7E173 /* Mahasiswa.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCACD82D1F74D91100C7E173 /* Mahasiswa.swift */; };
 		DCACD8301F74DC8600C7E173 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCACD82F1F74DC8600C7E173 /* TableViewController.swift */; };
+		DCACD8361F74FFE600C7E173 /* GetOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCACD8351F74FFE600C7E173 /* GetOneViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		DCACD8271F74CF4A00C7E173 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCACD82D1F74D91100C7E173 /* Mahasiswa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mahasiswa.swift; sourceTree = "<group>"; };
 		DCACD82F1F74DC8600C7E173 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		DCACD8351F74FFE600C7E173 /* GetOneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetOneViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,15 +61,32 @@
 			isa = PBXGroup;
 			children = (
 				DCACD81B1F74CF4A00C7E173 /* AppDelegate.swift */,
-				DCACD81D1F74CF4A00C7E173 /* ViewController.swift */,
-				DCACD82D1F74D91100C7E173 /* Mahasiswa.swift */,
-				DCACD82F1F74DC8600C7E173 /* TableViewController.swift */,
+				DCACD8321F74FF4B00C7E173 /* Model */,
+				DCACD8311F74FF3500C7E173 /* ViewController */,
 				DCACD81F1F74CF4A00C7E173 /* Main.storyboard */,
 				DCACD8221F74CF4A00C7E173 /* Assets.xcassets */,
 				DCACD8241F74CF4A00C7E173 /* LaunchScreen.storyboard */,
 				DCACD8271F74CF4A00C7E173 /* Info.plist */,
 			);
 			path = "Web Service 2";
+			sourceTree = "<group>";
+		};
+		DCACD8311F74FF3500C7E173 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DCACD82F1F74DC8600C7E173 /* TableViewController.swift */,
+				DCACD81D1F74CF4A00C7E173 /* ViewController.swift */,
+				DCACD8351F74FFE600C7E173 /* GetOneViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		DCACD8321F74FF4B00C7E173 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DCACD82D1F74D91100C7E173 /* Mahasiswa.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +165,7 @@
 				DCACD82E1F74D91100C7E173 /* Mahasiswa.swift in Sources */,
 				DCACD81E1F74CF4A00C7E173 /* ViewController.swift in Sources */,
 				DCACD81C1F74CF4A00C7E173 /* AppDelegate.swift in Sources */,
+				DCACD8361F74FFE600C7E173 /* GetOneViewController.swift in Sources */,
 				DCACD8301F74DC8600C7E173 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,6 +330,7 @@
 				DCACD82C1F74CF4A00C7E173 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

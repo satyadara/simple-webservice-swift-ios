@@ -7,25 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DC45F25D1F6275ED0072B30B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC45F25C1F6275ED0072B30B /* AppDelegate.swift */; };
-		DC45F25F1F6275ED0072B30B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC45F25E1F6275ED0072B30B /* ViewController.swift */; };
-		DC45F2621F6275ED0072B30B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC45F2601F6275ED0072B30B /* Main.storyboard */; };
-		DC45F2641F6275ED0072B30B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC45F2631F6275ED0072B30B /* Assets.xcassets */; };
-		DC45F2671F6275ED0072B30B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC45F2651F6275ED0072B30B /* LaunchScreen.storyboard */; };
+		DCACD81C1F74CF4A00C7E173 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCACD81B1F74CF4A00C7E173 /* AppDelegate.swift */; };
+		DCACD81E1F74CF4A00C7E173 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCACD81D1F74CF4A00C7E173 /* ViewController.swift */; };
+		DCACD8211F74CF4A00C7E173 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCACD81F1F74CF4A00C7E173 /* Main.storyboard */; };
+		DCACD8231F74CF4A00C7E173 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCACD8221F74CF4A00C7E173 /* Assets.xcassets */; };
+		DCACD8261F74CF4A00C7E173 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCACD8241F74CF4A00C7E173 /* LaunchScreen.storyboard */; };
+		DCACD82E1F74D91100C7E173 /* Mahasiswa.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCACD82D1F74D91100C7E173 /* Mahasiswa.swift */; };
+		DCACD8301F74DC8600C7E173 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCACD82F1F74DC8600C7E173 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DC45F2591F6275ED0072B30B /* Web Service.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Web Service.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC45F25C1F6275ED0072B30B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DC45F25E1F6275ED0072B30B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DC45F2611F6275ED0072B30B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DC45F2631F6275ED0072B30B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DC45F2661F6275ED0072B30B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		DC45F2681F6275ED0072B30B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCACD8181F74CF4A00C7E173 /* Web Service 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Web Service 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCACD81B1F74CF4A00C7E173 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DCACD81D1F74CF4A00C7E173 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DCACD8201F74CF4A00C7E173 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DCACD8221F74CF4A00C7E173 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DCACD8251F74CF4A00C7E173 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DCACD8271F74CF4A00C7E173 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCACD82D1F74D91100C7E173 /* Mahasiswa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mahasiswa.swift; sourceTree = "<group>"; };
+		DCACD82F1F74DC8600C7E173 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		DC45F2561F6275ED0072B30B /* Frameworks */ = {
+		DCACD8151F74CF4A00C7E173 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,72 +39,75 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DC45F2501F6275ED0072B30B = {
+		DCACD80F1F74CF4A00C7E173 = {
 			isa = PBXGroup;
 			children = (
-				DC45F25B1F6275ED0072B30B /* Web Service */,
-				DC45F25A1F6275ED0072B30B /* Products */,
+				DCACD81A1F74CF4A00C7E173 /* Web Service 2 */,
+				DCACD8191F74CF4A00C7E173 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		DC45F25A1F6275ED0072B30B /* Products */ = {
+		DCACD8191F74CF4A00C7E173 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DC45F2591F6275ED0072B30B /* Web Service.app */,
+				DCACD8181F74CF4A00C7E173 /* Web Service 2.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DC45F25B1F6275ED0072B30B /* Web Service */ = {
+		DCACD81A1F74CF4A00C7E173 /* Web Service 2 */ = {
 			isa = PBXGroup;
 			children = (
-				DC45F25C1F6275ED0072B30B /* AppDelegate.swift */,
-				DC45F25E1F6275ED0072B30B /* ViewController.swift */,
-				DC45F2601F6275ED0072B30B /* Main.storyboard */,
-				DC45F2631F6275ED0072B30B /* Assets.xcassets */,
-				DC45F2651F6275ED0072B30B /* LaunchScreen.storyboard */,
-				DC45F2681F6275ED0072B30B /* Info.plist */,
+				DCACD81B1F74CF4A00C7E173 /* AppDelegate.swift */,
+				DCACD81D1F74CF4A00C7E173 /* ViewController.swift */,
+				DCACD82D1F74D91100C7E173 /* Mahasiswa.swift */,
+				DCACD82F1F74DC8600C7E173 /* TableViewController.swift */,
+				DCACD81F1F74CF4A00C7E173 /* Main.storyboard */,
+				DCACD8221F74CF4A00C7E173 /* Assets.xcassets */,
+				DCACD8241F74CF4A00C7E173 /* LaunchScreen.storyboard */,
+				DCACD8271F74CF4A00C7E173 /* Info.plist */,
 			);
-			path = "Web Service";
+			path = "Web Service 2";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DC45F2581F6275ED0072B30B /* Web Service */ = {
+		DCACD8171F74CF4A00C7E173 /* Web Service 2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DC45F26B1F6275ED0072B30B /* Build configuration list for PBXNativeTarget "Web Service" */;
+			buildConfigurationList = DCACD82A1F74CF4A00C7E173 /* Build configuration list for PBXNativeTarget "Web Service 2" */;
 			buildPhases = (
-				DC45F2551F6275ED0072B30B /* Sources */,
-				DC45F2561F6275ED0072B30B /* Frameworks */,
-				DC45F2571F6275ED0072B30B /* Resources */,
+				DCACD8141F74CF4A00C7E173 /* Sources */,
+				DCACD8151F74CF4A00C7E173 /* Frameworks */,
+				DCACD8161F74CF4A00C7E173 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Web Service";
-			productName = "Web Service";
-			productReference = DC45F2591F6275ED0072B30B /* Web Service.app */;
+			name = "Web Service 2";
+			productName = "Web Service 2";
+			productReference = DCACD8181F74CF4A00C7E173 /* Web Service 2.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		DC45F2511F6275ED0072B30B /* Project object */ = {
+		DCACD8101F74CF4A00C7E173 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = satyadara;
 				TargetAttributes = {
-					DC45F2581F6275ED0072B30B = {
+					DCACD8171F74CF4A00C7E173 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = P69G36FKV3;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = DC45F2541F6275ED0072B30B /* Build configuration list for PBXProject "Web Service" */;
+			buildConfigurationList = DCACD8131F74CF4A00C7E173 /* Build configuration list for PBXProject "Web Service 2" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -108,54 +115,56 @@
 				en,
 				Base,
 			);
-			mainGroup = DC45F2501F6275ED0072B30B;
-			productRefGroup = DC45F25A1F6275ED0072B30B /* Products */;
+			mainGroup = DCACD80F1F74CF4A00C7E173;
+			productRefGroup = DCACD8191F74CF4A00C7E173 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DC45F2581F6275ED0072B30B /* Web Service */,
+				DCACD8171F74CF4A00C7E173 /* Web Service 2 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		DC45F2571F6275ED0072B30B /* Resources */ = {
+		DCACD8161F74CF4A00C7E173 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC45F2671F6275ED0072B30B /* LaunchScreen.storyboard in Resources */,
-				DC45F2641F6275ED0072B30B /* Assets.xcassets in Resources */,
-				DC45F2621F6275ED0072B30B /* Main.storyboard in Resources */,
+				DCACD8261F74CF4A00C7E173 /* LaunchScreen.storyboard in Resources */,
+				DCACD8231F74CF4A00C7E173 /* Assets.xcassets in Resources */,
+				DCACD8211F74CF4A00C7E173 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		DC45F2551F6275ED0072B30B /* Sources */ = {
+		DCACD8141F74CF4A00C7E173 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC45F25F1F6275ED0072B30B /* ViewController.swift in Sources */,
-				DC45F25D1F6275ED0072B30B /* AppDelegate.swift in Sources */,
+				DCACD82E1F74D91100C7E173 /* Mahasiswa.swift in Sources */,
+				DCACD81E1F74CF4A00C7E173 /* ViewController.swift in Sources */,
+				DCACD81C1F74CF4A00C7E173 /* AppDelegate.swift in Sources */,
+				DCACD8301F74DC8600C7E173 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DC45F2601F6275ED0072B30B /* Main.storyboard */ = {
+		DCACD81F1F74CF4A00C7E173 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DC45F2611F6275ED0072B30B /* Base */,
+				DCACD8201F74CF4A00C7E173 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		DC45F2651F6275ED0072B30B /* LaunchScreen.storyboard */ = {
+		DCACD8241F74CF4A00C7E173 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DC45F2661F6275ED0072B30B /* Base */,
+				DCACD8251F74CF4A00C7E173 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -163,7 +172,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		DC45F2691F6275ED0072B30B /* Debug */ = {
+		DCACD8281F74CF4A00C7E173 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -213,7 +222,7 @@
 			};
 			name = Debug;
 		};
-		DC45F26A1F6275ED0072B30B /* Release */ = {
+		DCACD8291F74CF4A00C7E173 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -256,25 +265,27 @@
 			};
 			name = Release;
 		};
-		DC45F26C1F6275ED0072B30B /* Debug */ = {
+		DCACD82B1F74CF4A00C7E173 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "Web Service/Info.plist";
+				DEVELOPMENT_TEAM = P69G36FKV3;
+				INFOPLIST_FILE = "Web Service 2/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.satyadara.Web-Service";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.satyadara.Web-Service-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		DC45F26D1F6275ED0072B30B /* Release */ = {
+		DCACD82C1F74CF4A00C7E173 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "Web Service/Info.plist";
+				DEVELOPMENT_TEAM = P69G36FKV3;
+				INFOPLIST_FILE = "Web Service 2/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.satyadara.Web-Service";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.satyadara.Web-Service-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -283,24 +294,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DC45F2541F6275ED0072B30B /* Build configuration list for PBXProject "Web Service" */ = {
+		DCACD8131F74CF4A00C7E173 /* Build configuration list for PBXProject "Web Service 2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DC45F2691F6275ED0072B30B /* Debug */,
-				DC45F26A1F6275ED0072B30B /* Release */,
+				DCACD8281F74CF4A00C7E173 /* Debug */,
+				DCACD8291F74CF4A00C7E173 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DC45F26B1F6275ED0072B30B /* Build configuration list for PBXNativeTarget "Web Service" */ = {
+		DCACD82A1F74CF4A00C7E173 /* Build configuration list for PBXNativeTarget "Web Service 2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DC45F26C1F6275ED0072B30B /* Debug */,
-				DC45F26D1F6275ED0072B30B /* Release */,
+				DCACD82B1F74CF4A00C7E173 /* Debug */,
+				DCACD82C1F74CF4A00C7E173 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = DC45F2511F6275ED0072B30B /* Project object */;
+	rootObject = DCACD8101F74CF4A00C7E173 /* Project object */;
 }

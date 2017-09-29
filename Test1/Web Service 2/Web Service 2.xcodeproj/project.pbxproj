@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC3467D91F7E3A3800B0C478 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3467D81F7E3A3800B0C478 /* FormViewController.swift */; };
 		DCACD81C1F74CF4A00C7E173 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCACD81B1F74CF4A00C7E173 /* AppDelegate.swift */; };
 		DCACD81E1F74CF4A00C7E173 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCACD81D1F74CF4A00C7E173 /* ViewController.swift */; };
 		DCACD8211F74CF4A00C7E173 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCACD81F1F74CF4A00C7E173 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DC3467D81F7E3A3800B0C478 /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
 		DCACD8181F74CF4A00C7E173 /* Web Service 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Web Service 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCACD81B1F74CF4A00C7E173 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCACD81D1F74CF4A00C7E173 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				DCACD82F1F74DC8600C7E173 /* TableViewController.swift */,
 				DCACD81D1F74CF4A00C7E173 /* ViewController.swift */,
 				DCACD8351F74FFE600C7E173 /* GetOneViewController.swift */,
+				DC3467D81F7E3A3800B0C478 /* FormViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -116,12 +119,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = satyadara;
 				TargetAttributes = {
 					DCACD8171F74CF4A00C7E173 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = P69G36FKV3;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -164,6 +168,7 @@
 			files = (
 				DCACD82E1F74D91100C7E173 /* Mahasiswa.swift in Sources */,
 				DCACD81E1F74CF4A00C7E173 /* ViewController.swift in Sources */,
+				DC3467D91F7E3A3800B0C478 /* FormViewController.swift in Sources */,
 				DCACD81C1F74CF4A00C7E173 /* AppDelegate.swift in Sources */,
 				DCACD8361F74FFE600C7E173 /* GetOneViewController.swift in Sources */,
 				DCACD8301F74DC8600C7E173 /* TableViewController.swift in Sources */,
@@ -202,7 +207,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -210,7 +217,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -252,7 +263,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -260,7 +273,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -294,7 +311,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.satyadara.Web-Service-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -307,7 +325,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.satyadara.Web-Service-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

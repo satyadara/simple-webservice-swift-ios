@@ -9,10 +9,10 @@
 import UIKit
 
 class Mahasiswa: NSObject {
-    let npm: String
-    let nama: String
-    let jurusan: String
-    let fakultas: String
+    var npm: String
+    var nama: String
+    var jurusan: String
+    var fakultas: String
     
     init(json: [String: Any])  {
         self.npm = json["npm"] as? String ?? ""

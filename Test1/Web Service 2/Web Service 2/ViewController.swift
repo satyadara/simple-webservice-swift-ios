@@ -14,14 +14,18 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
     @IBAction func GET(_ sender: Any) {
         performSegue(withIdentifier: "getMahasiswaList", sender: (Any).self)
     }
+    
     @IBAction func GETONE(_ sender: Any) {
         performSegue(withIdentifier: "getMahasiswa", sender: (Any).self)
+    }
+    
+    @IBAction func POST(_ sender: Any) {
+        performSegue(withIdentifier: "postMahasiswa", sender: (Any).self)
     }
     
 }

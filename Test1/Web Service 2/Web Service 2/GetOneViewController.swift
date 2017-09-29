@@ -15,13 +15,12 @@ class GetOneViewController: UIViewController {
     @IBOutlet weak var namaLabel: UILabel!
     @IBOutlet weak var npmLabel: UILabel!
     
+    @IBOutlet weak var cariText: UITextField!
     var mahasiswa:Mahasiswa? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        getJson(urlString: "https://satyadara.com/api/mahasiswa/150708332")
-            }
+    }
     
     fileprivate func getJson(urlString: String)  {
         let url = URL(string: urlString)
@@ -34,10 +33,16 @@ class GetOneViewController: UIViewController {
                         let jsonObject = try JSONSerialization.jsonObject(with: useable, options: .mutableContainers) as AnyObject
                         
                         if let mhs = jsonObject["mahasiswa"] as! [AnyObject]? {
-                            
-                            print(mhs)
-                            self.mahasiswa = Mahasiswa(json: mhs[0] as! [String: Any])
-                            self.mahasiswa?.printdata()
+                            if !(mhs.isEmpty) {
+                                print(mhs)
+                                self.mahasiswa = Mahasiswa(json: mhs[0] as! [String: Any])
+                                self.mahasiswa?.printdata()
+                                //SET LABEL PADA TAMPILAN
+                                self.setMahasiswa()
+                            }
+                            else{
+                                print("nil")
+                            }
                         }
                         
                     }
@@ -47,9 +52,18 @@ class GetOneViewController: UIViewController {
                 }
             }
             }.resume()
-        
-        
     }
     
+    @IBAction func cariClicked(_ sender: Any) {
+        getJson(urlString: "https://satyadara.com/api/mahasiswax/" + cariText.text!)
+    }
     
+    fileprivate func setMahasiswa()  {
+        DispatchQueue.main.async(execute: {
+            self.npmLabel.text = self.mahasiswa?.npm
+            self.namaLabel.text = self.mahasiswa?.nama
+            self.fakultasLabel.text = self.mahasiswa?.fakultas
+            self.jurusanLabel.text = self.mahasiswa?.jurusan
+        })
+    }
 }

@@ -34,11 +34,11 @@ class TableViewController: UITableViewController {
                                 let m = Mahasiswa(json: mhs as! [String: Any])
                                 self.mahasiswa.append(m)
                             }
-                            
-                            for mhs in self.mahasiswa {
-                                mhs.printdata()
-                            }
-                            
+//
+//                            for mhs in self.mahasiswa {
+//                                mhs.printdata()
+//                            }
+//
                             //REALOAD TABLE
                             DispatchQueue.main.async(execute: {
                                 self.tableView.reloadData()
@@ -112,7 +112,7 @@ class TableViewController: UITableViewController {
      }
      */
     
-    /*
+    
      // MARK: - Navigation
      
      // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -120,6 +120,6 @@ class TableViewController: UITableViewController {
      // Get the new view controller using segue.destinationViewController.
      // Pass the selected object to the new view controller.
      }
-     */
+    
     
 }

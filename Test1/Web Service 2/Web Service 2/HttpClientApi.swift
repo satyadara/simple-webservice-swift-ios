@@ -37,12 +37,10 @@ class HttpClientApi: NSObject {
         
         if let params = params {
             
-            
             let  jsonData = try? JSONSerialization.data(withJSONObject: params, options: .prettyPrinted)
             
             request?.setValue("application/json", forHTTPHeaderField: "Content-Type")
             request?.httpBody = jsonData//?.base64EncodedData()
-            
             
             //paramString.data(using: String.Encoding.utf8)
         }

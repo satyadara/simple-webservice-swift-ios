@@ -14,8 +14,9 @@ class TableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    
         getJson(urlString: URL_JSON)
+        
     }
     
     fileprivate func getJson(urlString: String)  {
